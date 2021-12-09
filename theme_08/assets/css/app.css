@@ -250,10 +250,17 @@
 
 .section-3 .content .story {
   background-color: #c0ae87;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .section-3 .content .story {
+    text-align: center;
+  }
 }
 
 .section-3 .content .story h3 {
-  line-height: 10rem;
+  line-height: 7rem;
   text-align: center;
 }
 
@@ -396,7 +403,26 @@
 
 .section-4 .content .maps-embed {
   width: 100%;
-  aspect-ratio: 3;
+  aspect-ratio: 2.8;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .section-4 .content .maps-embed {
+    aspect-ratio: 1.6;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-4 .content .maps-embed {
+    aspect-ratio: 2.3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-4 .content .maps-embed {
+    aspect-ratio: 3;
+  }
 }
 
 @media (max-width: 576px) {
@@ -416,7 +442,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
+  width: 100%;
 }
 
 @media (max-width: 576px) {
@@ -444,13 +474,6 @@
 
 .section-4 .content form .form-control::placeholder {
   color: #2e272f;
-}
-
-.section-4 .content form .btn {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto;
 }
 
 .section-5 {
@@ -495,7 +518,7 @@
 .section-5 .content .card {
   text-align: left;
   background-color: #ffffff80;
-  max-height: 295px;
+  height: 295px;
   overflow: hidden;
   border: none;
   margin: 0 -15px;
@@ -648,15 +671,15 @@
 .section-9 .hias {
   position: absolute;
   bottom: 20px;
-  left: -120px;
-  height: 1500px;
+  left: -20px;
+  height: 1050px;
   width: auto;
   opacity: 0.5;
 }
 
 @media (max-width: 1200px) {
   .section-9 .hias {
-    height: 1200px;
+    height: 1080px;
   }
 }
 
@@ -697,56 +720,57 @@
 
 h1 {
   font-family: "Ruthligos";
-  font-size: 60pt;
+  font-size: 5.4em;
 }
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 23px;
+    font-size: 1.9em;
   }
 }
 
 h2 {
   font-family: "Afterglow";
-  font-size: 30pt;
+  font-size: 2.5em;
 }
 
 @media (max-width: 576px) {
   h2 {
-    font-size: 8px;
+    font-size: 1.2em;
   }
 }
 
 h3 {
   font-family: "Ruthligos";
-  font-size: 30pt;
+  font-size: 2.5em;
 }
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 12px;
+    font-size: 1.3em;
   }
 }
 
 h4 {
   font-family: "Poppins";
-  font-size: 20pt;
+  font-size: 1.7em;
 }
 
 @media (max-width: 576px) {
   h4 {
-    font-size: 12px;
+    font-size: 1.5em;
   }
 }
 
 p {
   font-family: "Poppins";
-  font-size: 16pt;
+  font-size: 1.3em;
+  line-height: 1.8rem;
 }
 
 @media (max-width: 576px) {
   p {
-    font-size: 10px;
+    font-size: 1.2em;
   }
 }
 
@@ -754,12 +778,23 @@ p {
   background-color: #2e272f;
   color: #ffebd6;
   text-transform: uppercase;
-  padding: 0.5rem 3rem;
+  padding: 0;
   font-family: "Poppins";
+  width: 212px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.3em;
 }
 
 .btn-custom:hover {
   color: #ffffff80;
+}
+
+@media (max-width: 576px) {
+  .btn-custom {
+    font-size: 1.2em;
+    width: 100%;
+  }
 }
 
 .loader-wrapper {
