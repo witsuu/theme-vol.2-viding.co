@@ -720,57 +720,57 @@
 
 h1 {
   font-family: "Ruthligos";
-  font-size: 65pt;
+  font-size: 65px;
 }
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 23pt;
+    font-size: 23px;
   }
 }
 
 h2 {
   font-family: "Afterglow";
-  font-size: 30pt;
+  font-size: 30px;
 }
 
 @media (max-width: 576px) {
   h2 {
-    font-size: 14pt;
+    font-size: 14px;
   }
 }
 
 h3 {
   font-family: "Ruthligos";
-  font-size: 30pt;
+  font-size: 30px;
 }
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 16pt;
+    font-size: 16px;
   }
 }
 
 h4 {
   font-family: "Poppins";
-  font-size: 20pt;
+  font-size: 20px;
 }
 
 @media (max-width: 576px) {
   h4 {
-    font-size: 18pt;
+    font-size: 18px;
   }
 }
 
 p {
   font-family: "Poppins";
-  font-size: 16pt;
+  font-size: 16px;
   line-height: 1.8rem;
 }
 
 @media (max-width: 576px) {
   p {
-    font-size: 14pt;
+    font-size: 14px;
   }
 }
 
@@ -783,7 +783,7 @@ p {
   width: 212px;
   height: 40px;
   line-height: 40px;
-  font-size: 16pt;
+  font-size: 16px;
 }
 
 .btn-custom:hover {
@@ -792,7 +792,7 @@ p {
 
 @media (max-width: 576px) {
   .btn-custom {
-    font-size: 14pt;
+    font-size: 14px;
     width: 100%;
   }
 }
