@@ -76,6 +76,7 @@
 
 .section-2 {
   position: relative;
+  overflow: hidden;
 }
 
 .section-2 .content h3 {
@@ -133,6 +134,7 @@
 
 .section-3 {
   padding: 3rem 0;
+  overflow: hidden;
 }
 
 @media (max-width: 576px) {
@@ -154,6 +156,7 @@
   position: relative;
   text-align: center;
   padding: 3rem 0;
+  overflow: hidden;
 }
 
 @media (max-width: 576px) {
@@ -225,6 +228,7 @@
   position: relative;
   text-align: center;
   margin: 3rem 0;
+  overflow: hidden;
 }
 
 @media (max-width: 576px) {
@@ -319,6 +323,7 @@
 
 .section-6 {
   padding: 0 0 3rem 0;
+  overflow: hidden;
 }
 
 .section-6 .content {
@@ -358,6 +363,7 @@
 .section-8 {
   position: relative;
   padding: 3rem 0;
+  overflow: hidden;
 }
 
 .section-8 .content {
@@ -375,6 +381,7 @@
 
 .section-9 {
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 .section-9 .content {
@@ -622,6 +629,10 @@ h6 {
 
 .divider::after {
   width: 10px;
+}
+
+section {
+  overflow: hidden;
 }
 
 .loader-wrapper {

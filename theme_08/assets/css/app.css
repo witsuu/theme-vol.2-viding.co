@@ -666,6 +666,7 @@
 
 .section-9 {
   position: relative;
+  overflow: visible;
 }
 
 .section-9 .hias {
@@ -795,6 +796,10 @@ p {
     font-size: 14px;
     width: 100%;
   }
+}
+
+section {
+  overflow: hidden;
 }
 
 .loader-wrapper {
