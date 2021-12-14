@@ -7,13 +7,14 @@
 //     document.querySelector(".loader-wrapper").style.display = "none";
 //   }
 // };
-
 $(document).on("readystatechange", () => {
-  if (document.readyState !== "complete") {
-    $(".main-app").hide();
-    $(".loader-wrapper").show();
-  } else {
-    $(".main-app").show();
-    $(".loader-wrapper").hide();
-  }
+  $(document).on("readystatechange", () => {
+    if (document.readyState !== "complete") {
+      document.querySelector(".main-app").style.visibility = "hidden";
+      document.querySelector(".loader-wrapper").style.visibility = "visible";
+    } else {
+      document.querySelector(".main-app").style.visibility = "visible";
+      document.querySelector(".loader-wrapper").style.visibility = "hidden";
+    }
+  });
 });
