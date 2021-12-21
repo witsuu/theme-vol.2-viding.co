@@ -747,6 +747,10 @@
   font-family: "Futura-Book", sans-serif;
 }
 
+html {
+  font-size: 16px;
+}
+
 .main-app {
   background-color: #fff;
   overflow: hidden;
