@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Chopin Script";
-  src: url("../fonts/ChopinScript.otf");
-}
-
 .section-1 {
   overflow: hidden;
   position: relative;
@@ -178,38 +173,55 @@
 
 .avatar-wrapper {
   text-align: center;
-  padding: 0 0 3rem 0;
+  padding: 0 0 5rem 0;
+}
+
+.avatar-wrapper h3 {
+  margin-bottom: 2rem;
 }
 
 .avatar-wrapper .content {
   position: relative;
-}
-
-.avatar-wrapper .content::before {
-  position: absolute;
-  background-image: url(../images/border-name.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  padding: 200px 0;
 }
 
 @media (max-width: 576px) {
-  .avatar-wrapper .content::before {
+  .avatar-wrapper .content {
+    padding: 120px 0;
+  }
+}
+
+.avatar-wrapper .content .frame-avatar-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  .avatar-wrapper .content .frame-avatar-horizontal {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .avatar-wrapper .content .frame-avatar-horizontal {
     display: none;
   }
 }
 
 .avatar-wrapper .content .frame-avatar {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: none;
-  width: 100%;
+  width: 110%;
   height: auto;
 }
 
@@ -232,50 +244,48 @@
 }
 
 .avatar-wrapper .content .avatar-name.man {
-  padding-top: 10rem;
-  margin-left: 17rem;
+  margin-bottom: 2rem;
+  margin-left: 280px;
 }
 
 @media (max-width: 1200px) {
   .avatar-wrapper .content .avatar-name.man {
-    margin-left: 11rem;
+    margin-left: 200px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .avatar-wrapper .content .avatar-name.man {
-    margin-left: 7rem;
+    margin-left: 130px;
   }
 }
 
 @media (max-width: 576px) {
   .avatar-wrapper .content .avatar-name.man {
-    padding: 7rem 0 1rem 2rem;
-    margin-left: 0;
+    margin-left: 30px;
   }
 }
 
 .avatar-wrapper .content .avatar-name.girl {
-  padding-bottom: 10rem;
-  margin-right: 17rem;
+  margin-top: 2rem;
+  margin-right: 280px;
 }
 
 @media (max-width: 1200px) {
   .avatar-wrapper .content .avatar-name.girl {
-    margin-right: 11rem;
+    margin-right: 200px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .avatar-wrapper .content .avatar-name.girl {
-    margin-right: 7rem;
+    margin-right: 130px;
   }
 }
 
 @media (max-width: 576px) {
   .avatar-wrapper .content .avatar-name.girl {
-    padding: 1rem 2.5rem 5rem 0;
-    margin-right: 0;
+    margin-right: 30px;
   }
 }
 
@@ -342,15 +352,7 @@
 }
 
 .section-3 .content-wrapper .content p {
-  font-style: italic;
   font-weight: 500;
-  font-size: 15px;
-}
-
-@media (max-width: 576px) {
-  .section-3 .content-wrapper .content p {
-    font-size: 12px;
-  }
 }
 
 .section-4 .gallery-wrapper {
@@ -595,16 +597,10 @@
 
 .section-7 {
   position: relative;
-}
-
-.section-7 .content {
-  text-align: right;
-  position: relative;
   overflow: hidden;
-  padding: 3rem 0;
 }
 
-.section-7 .content .flower {
+.section-7 .flower {
   position: absolute;
   width: 470px;
   left: 0px;
@@ -612,9 +608,16 @@
 }
 
 @media (max-width: 576px) {
-  .section-7 .content .flower {
+  .section-7 .flower {
     display: none;
   }
+}
+
+.section-7 .content {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0;
 }
 
 @media (max-width: 576px) {
@@ -811,7 +814,7 @@
 
 h1 {
   font-size: 44px;
-  font-family: "Chopin Script";
+  font-family: "Playball";
 }
 
 @media (max-width: 576px) {
@@ -822,7 +825,7 @@ h1 {
 
 h2 {
   font-size: 40px;
-  font-family: "Chopin Script";
+  font-family: "Playball";
 }
 
 @media (max-width: 576px) {
@@ -834,7 +837,7 @@ h2 {
 h3 {
   font-size: 36px;
   font-weight: 700;
-  font-family: "Chopin Script";
+  font-family: "Playball";
 }
 
 @media (max-width: 576px) {
@@ -845,7 +848,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-  font-family: "Chopin Script";
+  font-family: "Playball";
 }
 
 @media (max-width: 576px) {
@@ -855,24 +858,24 @@ h4 {
 }
 
 h5 {
-  font-size: 28px;
-  font-family: "Source Sans Pro";
-}
-
-@media (max-width: 576px) {
-  h5 {
-    font-size: 24px;
-  }
-}
-
-h6 {
   font-size: 24px;
   font-family: "Source Sans Pro";
 }
 
 @media (max-width: 576px) {
-  h6 {
+  h5 {
     font-size: 20px;
+  }
+}
+
+h6 {
+  font-size: 22px;
+  font-family: "Source Sans Pro";
+}
+
+@media (max-width: 576px) {
+  h6 {
+    font-size: 16px;
   }
 }
 

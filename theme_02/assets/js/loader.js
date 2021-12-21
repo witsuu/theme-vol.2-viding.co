@@ -7,7 +7,6 @@
 //     document.querySelector(".loader-wrapper").style.display = "none";
 //   }
 // };
-
 $(document).on("readystatechange", () => {
   if (document.readyState !== "complete") {
     $(".main-app").hide();
