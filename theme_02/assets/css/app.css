@@ -859,7 +859,7 @@ ol {
   height: 100vh;
   width: 100%;
   background-color: #0b162e;
-  position: relative;
+  position: fixed;
 }
 
 .load-wrapper .loader-1 {
