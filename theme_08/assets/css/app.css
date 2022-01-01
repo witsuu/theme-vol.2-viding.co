@@ -137,6 +137,12 @@
   padding: 3rem 0;
 }
 
+@media (max-width: 576px) {
+  .section-2 .content .title-salam {
+    font-size: 18px;
+  }
+}
+
 .section-2 .content .bridge .title-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,23 +233,6 @@
   overflow: hidden;
 }
 
-.section-3 .bg-gallery {
-  width: 35%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .section-3 .bg-gallery {
-    top: unset;
-    left: 0;
-    width: 100%;
-    height: 480px;
-  }
-}
-
 .section-3 .content {
   position: relative;
 }
@@ -271,42 +260,44 @@
   }
 }
 
-.section-3 .content .zoom-gallery {
+.zoom-gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  padding: 2rem;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  padding: 2rem 0;
   height: auto;
+  gap: 0.75rem;
+  text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .section-3 .content .zoom-gallery {
-    padding: 0;
+.zoom-gallery .photo {
+  width: 100%;
+  height: 219px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .zoom-gallery .photo {
+    height: 67px;
   }
 }
 
 @media (max-width: 992px) {
-  .section-3 .content .zoom-gallery {
+  .zoom-gallery {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 1rem;
     padding: 2rem 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .section-3 .content .zoom-gallery .photo {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .section-3 .content .zoom-gallery .photo {
+  .zoom-gallery .photo {
     width: 100%;
   }
 }
@@ -702,7 +693,7 @@
 
 @media (max-width: 576px) {
   .section-9 .hias {
-    height: 640px;
+    height: 605px;
   }
 }
 
@@ -719,6 +710,8 @@
 
 html {
   font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .main-app {
@@ -743,7 +736,7 @@ h2 {
 
 @media (max-width: 576px) {
   h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -754,7 +747,7 @@ h3 {
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 

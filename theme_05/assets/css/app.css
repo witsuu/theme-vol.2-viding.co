@@ -808,6 +808,8 @@
 
 html {
   font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .main-app {
@@ -889,18 +891,10 @@ ol {
   font-family: "Source Sans Pro";
 }
 
-@media (max-width: 768px) {
-  p,
-  ol {
-    line-height: 1.8rem;
-  }
-}
-
 @media (max-width: 576px) {
   p,
   ol {
     font-size: 14px;
-    line-height: 1.8rem;
   }
 }
 

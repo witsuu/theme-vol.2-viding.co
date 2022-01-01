@@ -82,11 +82,18 @@
 .section-2 .content h3 {
   color: #7b5c26;
   font-weight: 700;
+  font-family: "Bacalisties";
 }
 
 .section-2 .content .salam {
   padding: 1rem 0;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  .section-2 .content .salam .title-salam {
+    font-size: 20px;
+  }
 }
 
 .section-2 .content .bridge {
@@ -209,7 +216,8 @@
   }
 }
 
-.presence-wrapper form .form-control {
+.presence-wrapper form .form-control,
+.presence-wrapper form .form-select {
   border: none;
   -webkit-box-shadow: 0 0 5px #00000050;
           box-shadow: 0 0 5px #00000050;
@@ -227,8 +235,6 @@
   background-size: cover;
   position: relative;
   text-align: center;
-  margin: 3rem 0;
-  overflow: hidden;
 }
 
 @media (max-width: 576px) {
@@ -250,23 +256,25 @@
           transform: scale(-1, -1);
 }
 
+@media (max-width: 576px) {
+  .section-5 .wave-1 {
+    height: 70px;
+    width: 122%;
+  }
+}
+
 .section-5 .wave-2 {
   bottom: -5px;
 }
 
 .section-5 .content {
   position: relative;
+  overflow: hidden;
 }
 
 .section-5 .content h3 {
   color: #7b5c26;
-  margin-top: 4rem;
-}
-
-@media (max-width: 576px) {
-  .section-5 .content h3 {
-    margin-top: -10px;
-  }
+  padding: 0.25rem 0;
 }
 
 .section-5 .content .row {
@@ -322,7 +330,7 @@
 }
 
 .section-6 {
-  padding: 0 0 3rem 0;
+  padding: 1rem 0 3rem 0;
   overflow: hidden;
 }
 
@@ -330,10 +338,24 @@
   text-align: center;
 }
 
-@media (max-width: 576px) {
-  .section-6 .content .row {
-    gap: 0.25rem;
-  }
+.section-6 .content h3 {
+  color: #7b5c26;
+}
+
+.section-6 .content form .form-control {
+  border: none;
+  -webkit-box-shadow: 0 0 5px #00000050;
+          box-shadow: 0 0 5px #00000050;
+  padding: 0.7rem 2rem;
+  font-family: "Poppins";
+  margin-bottom: 1rem;
+}
+
+.section-6 .content form .input-group-text {
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 0 5px #00000050;
+          box-shadow: 0 0 5px #00000050;
+  padding: 0.7rem 2rem;
 }
 
 .section-7 {
@@ -516,6 +538,8 @@
 
 html {
   font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .main-app {
@@ -567,11 +591,12 @@ h3 {
   font-family: "Bacalisties";
   font-size: 36px;
   font-weight: 700;
+  padding: 0.25rem 0;
 }
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 16px;
+    font-size: 28px;
   }
 }
 
@@ -582,7 +607,7 @@ h4 {
 
 @media (max-width: 576px) {
   h4 {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -592,18 +617,10 @@ h6 {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
-  p,
-  h6 {
-    line-height: 1.8rem;
-  }
-}
-
 @media (max-width: 576px) {
   p,
   h6 {
     font-size: 14px;
-    line-height: 1.8rem;
   }
 }
 
