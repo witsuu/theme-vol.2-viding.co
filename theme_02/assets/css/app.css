@@ -822,7 +822,7 @@ h5 {
 }
 
 h6 {
-  font-size: 24px;
+  font-size: 18px;
   font-family: "Futura-Book";
 }
 
@@ -834,22 +834,14 @@ h6 {
 
 p,
 ol {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Futura-Book";
-}
-
-@media (max-width: 768px) {
-  p,
-  ol {
-    line-height: 1.8rem;
-  }
 }
 
 @media (max-width: 576px) {
   p,
   ol {
     font-size: 14px;
-    line-height: 1.8rem;
   }
 }
 
