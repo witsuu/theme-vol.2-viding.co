@@ -9,13 +9,12 @@
 }
 
 .section-1 {
-  height: 120vh;
+  height: 100vh;
   background-image: url(../images/bg-header.png);
   background-size: cover;
   color: #fff;
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
 
 @media (max-width: 576px) {
@@ -45,11 +44,17 @@
 
 .section-1 .wave {
   position: absolute;
-  bottom: -25px;
+  bottom: -30px;
   left: 0;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .section-1 .wave {
+    bottom: -20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -167,6 +172,12 @@
 }
 
 @media (max-width: 576px) {
+  .section-4 {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 576px) {
   .section-4 .content .row {
     gap: 2rem;
   }
@@ -203,11 +214,28 @@
 
 .section-4 .content .acara {
   margin: auto;
-  padding: 3rem 0;
+  padding: 0 0 3rem 0;
+}
+
+.section-4 .content .icon {
+  width: 100px;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .section-4 .content .icon {
+    width: 80px;
+  }
 }
 
 .presence-wrapper {
   padding: 3rem 0;
+}
+
+@media (max-width: 576px) {
+  .presence-wrapper {
+    padding: 1.5rem 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -240,6 +268,7 @@
 @media (max-width: 576px) {
   .section-5 {
     background-position: center top;
+    overflow: hidden;
   }
 }
 
@@ -263,8 +292,20 @@
   }
 }
 
+@media (min-width: 2560px) {
+  .section-5 .wave-1 {
+    top: -84px;
+  }
+}
+
 .section-5 .wave-2 {
   bottom: -5px;
+}
+
+@media (min-width: 2560px) {
+  .section-5 .wave-2 {
+    bottom: -84px;
+  }
 }
 
 .section-5 .content {
@@ -396,19 +437,15 @@
   color: #7b5c26;
 }
 
-.section-8 .content .icon {
-  width: 100px;
-  height: auto;
-}
-
 .section-9 {
-  padding: 2rem 0;
-  overflow: hidden;
+  position: relative;
+  overflow: unset;
 }
 
 .section-9 .content {
-  padding: 3rem 0;
+  padding: 0 0 3rem 0;
   text-align: center;
+  overflow: hidden;
 }
 
 @media (max-width: 576px) {
@@ -430,7 +467,6 @@
 
 .section-9 .content h3 {
   color: #7b5c26;
-  margin: 3rem 0;
 }
 
 .section-9 .content .acara {
@@ -504,7 +540,7 @@
 
 @media (max-width: 576px) {
   .section-10 .hias-1 {
-    left: -50px;
+    left: -60px;
   }
 }
 
@@ -514,7 +550,7 @@
 
 @media (max-width: 576px) {
   .section-10 .hias-2 {
-    right: -50px;
+    right: -60px;
   }
 }
 
@@ -522,6 +558,12 @@
   padding: 10rem 0 5rem 0;
   position: relative;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  .section-10 .content {
+    padding: 3rem 0;
+  }
 }
 
 .section-10 .content small {
@@ -534,6 +576,11 @@
   background-color: #fff;
   color: #000;
   padding: 1rem 0;
+  overflow: hidden;
+}
+
+.section-10 footer small {
+  position: relative;
 }
 
 html {
@@ -624,6 +671,22 @@ h6 {
   }
 }
 
+@media (max-width: 576px) {
+  small {
+    font-size: 10px;
+  }
+}
+
+.form-control {
+  padding: 0.75rem 0.75rem !important;
+}
+
+@media (max-width: 576px) {
+  .form-control {
+    font-size: 14px;
+  }
+}
+
 .divider {
   border-bottom: 2px solid #7b5c26;
   width: 100%;
@@ -650,10 +713,6 @@ h6 {
 
 .divider::after {
   width: 10px;
-}
-
-section {
-  overflow: hidden;
 }
 
 .loader-wrapper {
