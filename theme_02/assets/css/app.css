@@ -588,8 +588,14 @@
   -webkit-box-align: start !important;
       -ms-flex-align: start !important;
           align-items: flex-start !important;
-  aspect-ratio: 24;
+  height: 543px;
   position: relative;
+  overflow: auto;
+  word-wrap: break-word;
+}
+
+.section-6 .text-slider::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 576px) {
@@ -648,6 +654,7 @@
   background-position: center;
   position: relative;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .section-6 .bg-custom::before {

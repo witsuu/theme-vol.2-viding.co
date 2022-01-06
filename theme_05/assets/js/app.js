@@ -1,10 +1,10 @@
 "use strict";
 
 $(document).ready(() => {
-  $("#slider").infiniteslide({
-    speed: 20,
-    direction: "up",
-  });
+  // $("#slider").infiniteslide({
+  //   speed: 20,
+  //   direction: "up",
+  // });
 
   $(".zoom-gallery").magnificPopup({
     delegate: "a",

@@ -23,8 +23,8 @@ $(document).ready(() => {
     owl.trigger("prev.owl.carousel");
   });
 
-  $("#auto-scroll").infiniteslide({
-    speed: 20,
-    direction: "up",
-  });
+  // $("#auto-scroll").infiniteslide({
+  //   speed: 20,
+  //   direction: "up",
+  // });
 });

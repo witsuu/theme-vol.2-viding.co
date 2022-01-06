@@ -1,8 +1,8 @@
 $(document).ready(() => {
-  $("#auto-scroll").infiniteslide({
-    speed: 20,
-    direction: "up",
-  });
+  // $("#auto-scroll").infiniteslide({
+  //   speed: 20,
+  //   direction: "up",
+  // });
 
   $(".zoom-gallery").magnificPopup({
     delegate: "a",
