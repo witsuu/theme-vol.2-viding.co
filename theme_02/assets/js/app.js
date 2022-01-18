@@ -1,6 +1,16 @@
 "use strict";
 
 $(document).ready(() => {
+
+  $('body').css('overflowY', 'hidden');
+
+  $("#btn-envelope").on('click', function () {
+    $(".envelope-wrapper").css('transform', 'translateY(-100%)')
+    $(".envelope-wrapper").css('opacity', 0)
+
+    $('body').css('overflowY', 'auto');
+  })
+
   const width = window.screen.width;
   let item;
   if (width >= 576) {

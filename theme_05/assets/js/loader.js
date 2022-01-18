@@ -11,9 +11,9 @@
 $(document).on("readystatechange", () => {
   if (document.readyState !== "complete") {
     $(".main-app").hide();
-    $(".load-wrapper").show();
+    $(".loader-wrapper").show();
   } else {
     $(".main-app").show();
-    $(".load-wrapper").hide();
+    $(".loader-wrapper").hide();
   }
 });

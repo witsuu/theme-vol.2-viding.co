@@ -1,8 +1,14 @@
 $(document).ready(() => {
-  // $("#auto-scroll").infiniteslide({
-  //   speed: 20,
-  //   direction: "up",
-  // });
+  $('body').css('overflowY', 'hidden');
+  $('.main-app').css("visibility", 'hidden');
+
+  $("#btn-envelope").on('click', function () {
+    $("#envelope-wrap").css('transform', 'translateY(-100%)')
+    $("#envelope-wrap").css('opacity', 0)
+
+    $('body').css('overflowY', 'auto');
+    $('.main-app').css('visibility', 'visible');
+  })
 
   $(".zoom-gallery").magnificPopup({
     delegate: "a",
