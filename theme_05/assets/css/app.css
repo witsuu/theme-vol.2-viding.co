@@ -385,9 +385,21 @@
       flex-wrap: wrap;
 }
 
+@media (max-width: 576px) {
+  .section-4 .gallery-wrapper .zoom-gallery {
+    gap: 0.5rem;
+  }
+}
+
 .section-4 .gallery-wrapper .zoom-gallery a {
   position: relative;
   max-width: 50%;
+}
+
+@media (max-width: 576px) {
+  .section-4 .gallery-wrapper .zoom-gallery a {
+    max-width: 48%;
+  }
 }
 
 .section-4 .gallery-wrapper .zoom-gallery a::before {
