@@ -16,7 +16,7 @@ $(document).ready(() => {
   if (width >= 576) {
     item = 3;
   } else {
-    item = 2;
+    item = 1;
   }
 
   const owl = $(".owl-carousel");
