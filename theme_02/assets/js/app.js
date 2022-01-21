@@ -33,8 +33,16 @@ $(document).ready(() => {
     owl.trigger("prev.owl.carousel");
   });
 
-  // $("#auto-scroll").infiniteslide({
-  //   speed: 20,
-  //   direction: "up",
-  // });
+  $("#gallery").magnificPopup({
+    delegate: "div a",
+    type: "image",
+    mainClass: "mfp-with-zoom mfp-img-mobile",
+    gallery: {
+      enabled: true,
+    },
+    zoom: {
+      enabled: true,
+      easing: "ease-in-out",
+    },
+  });
 });
